@@ -20,8 +20,8 @@
 	<ItemGroup>
 		<ProjectReference Include="..\ReadTrack.Contracts\ReadTrack.Contracts.csproj" />
 		<ProjectReference Include="..\ReadTrack.LoggerService\ReadTrack.LoggerService.csproj" />
+		<ProjectReference Include="..\ReadTrack.Presentation\ReadTrack.Presentation.csproj" />
 		<ProjectReference Include="..\ReadTrack.Repository\ReadTrack.Repository.csproj" />
-		<ProjectReference Include="..\ReadTrack.Service.Contracts\ReadTrack.Service.Contracts.csproj" />
 		<ProjectReference Include="..\ReadTrack.Service\ReadTrack.Service.csproj" />
 	</ItemGroup>
 

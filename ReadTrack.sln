@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadTrack.Service.Contracts
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadTrack.Service", "ReadTrack.Service\ReadTrack.Service.csproj", "{3DD9436C-CC89-4EB8-AA7D-648C87B5D184}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadTrack.Presentation", "ReadTrack.Presentation\ReadTrack.Presentation.csproj", "{010A1097-AD94-4935-931F-E6E251239338}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{3DD9436C-CC89-4EB8-AA7D-648C87B5D184}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DD9436C-CC89-4EB8-AA7D-648C87B5D184}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DD9436C-CC89-4EB8-AA7D-648C87B5D184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{010A1097-AD94-4935-931F-E6E251239338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{010A1097-AD94-4935-931F-E6E251239338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{010A1097-AD94-4935-931F-E6E251239338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{010A1097-AD94-4935-931F-E6E251239338}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
