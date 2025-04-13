@@ -1,7 +1,6 @@
 ﻿using ReadTrack.Contracts;
+using ReadTrack.Entities.Models;
 using ReadTrack.Service.Contracts;
-
-namespace ReadTrack.Service;
 
 internal sealed class AuthorService : IAuthorService
 {
@@ -14,5 +13,17 @@ internal sealed class AuthorService : IAuthorService
         _logger = logger;
     }
 
-    // Aqui virão métodos de lógica, ex: GetAllAuthors(), AddAuthor(), etc.
+    public IEnumerable<Author> GetAllAuthors(bool trackChanges)
+    {
+        try
+        {
+            var authors = _repository.Author.GetAllAuthors(trackChanges);
+            return authors;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError($"Erro em {nameof(GetAllAuthors)}: {ex}");
+            throw;
+        }
+    }
 }

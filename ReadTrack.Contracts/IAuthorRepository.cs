@@ -1,6 +1,8 @@
-﻿namespace ReadTrack.Contracts;
+﻿using ReadTrack.Entities.Models;
+
+namespace ReadTrack.Contracts;
 
 public interface IAuthorRepository
 {
-    // Em breve adicionaremos métodos específicos
+    IEnumerable<Author> GetAllAuthors(bool trackChanges);
 }

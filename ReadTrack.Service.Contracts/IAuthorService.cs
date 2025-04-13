@@ -1,6 +1,8 @@
-﻿namespace ReadTrack.Service.Contracts;
+﻿using ReadTrack.Entities.Models;
+
+namespace ReadTrack.Service.Contracts;
 
 public interface IAuthorService
 {
-    // Aqui virão métodos como: GetAllAuthors(), GetAuthorById(), etc.
+    IEnumerable<Author> GetAllAuthors(bool trackChanges);
 }
