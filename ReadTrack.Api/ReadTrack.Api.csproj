@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ReadTrack.Contracts\ReadTrack.Contracts.csproj" />
     <ProjectReference Include="..\ReadTrack.LoggerService\ReadTrack.LoggerService.csproj" />
+    <ProjectReference Include="..\ReadTrack.Repository\ReadTrack.Repository.csproj" />
   </ItemGroup>
 
 </Project>
