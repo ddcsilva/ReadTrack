@@ -1,0 +1,8 @@
+2025-04-13 10:44:38.9265 Info Registered target NLog.Targets.FileTarget(Name=fileLogger)
+2025-04-13 10:44:38.9345 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-04-13 10:44:38.9345 Info Validating config: TargetNames=fileLogger, ConfigItems=14, FilePath=D:\Projetos\ReadTrack\ReadTrack.Api\bin\Debug\net8.0\NLog.config
+2025-04-13 10:44:38.9505 Info Configuration initialized.
+2025-04-13 10:46:17.1761 Info Registered target NLog.Targets.FileTarget(Name=fileLogger)
+2025-04-13 10:46:17.1914 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-04-13 10:46:17.2031 Info Validating config: TargetNames=fileLogger, ConfigItems=14, FilePath=D:\Projetos\ReadTrack\ReadTrack.Api\bin\Debug\net8.0\NLog.config
+2025-04-13 10:46:17.2169 Info Configuration initialized.
