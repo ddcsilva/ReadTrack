@@ -11,8 +11,4 @@
     <ProjectReference Include="..\ReadTrack.LoggerService\ReadTrack.LoggerService.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="logs\" />
-  </ItemGroup>
-
 </Project>
