@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
@@ -21,6 +21,8 @@
 		<ProjectReference Include="..\ReadTrack.Contracts\ReadTrack.Contracts.csproj" />
 		<ProjectReference Include="..\ReadTrack.LoggerService\ReadTrack.LoggerService.csproj" />
 		<ProjectReference Include="..\ReadTrack.Repository\ReadTrack.Repository.csproj" />
+		<ProjectReference Include="..\ReadTrack.Service.Contracts\ReadTrack.Service.Contracts.csproj" />
+		<ProjectReference Include="..\ReadTrack.Service\ReadTrack.Service.csproj" />
 	</ItemGroup>
 
 </Project>
