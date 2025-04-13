@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ReadTrack.Contracts\ReadTrack.Contracts.csproj" />
     <ProjectReference Include="..\ReadTrack.Entities\ReadTrack.Entities.csproj" />
   </ItemGroup>
 
