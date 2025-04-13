@@ -1,4 +1,7 @@
-﻿namespace ReadTrack.Api.Extensions;
+﻿using ReadTrack.Contracts;
+using ReadTrack.LoggerService;
+
+namespace ReadTrack.Api.Extensions;
 
 public static class ServiceExtensions
 {
@@ -20,4 +23,6 @@ public static class ServiceExtensions
             // Configurações padrões. Por enquanto não há necessidade de alterações.
         });
     }
+
+    public static void ConfigureLoggerService(this IServiceCollection services) => services.AddSingleton<ILoggerManager, LoggerManager>();
 }

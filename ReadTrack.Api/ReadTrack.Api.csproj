@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ReadTrack.Contracts\ReadTrack.Contracts.csproj" />
+    <ProjectReference Include="..\ReadTrack.LoggerService\ReadTrack.LoggerService.csproj" />
+  </ItemGroup>
+
 </Project>
