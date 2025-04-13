@@ -1,15 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ReadTrack.Contracts\ReadTrack.Contracts.csproj" />
-    <ProjectReference Include="..\ReadTrack.LoggerService\ReadTrack.LoggerService.csproj" />
-    <ProjectReference Include="..\ReadTrack.Repository\ReadTrack.Repository.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.15">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<PropertyGroup>
+		<InvariantGlobalization>false</InvariantGlobalization>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\ReadTrack.Contracts\ReadTrack.Contracts.csproj" />
+		<ProjectReference Include="..\ReadTrack.LoggerService\ReadTrack.LoggerService.csproj" />
+		<ProjectReference Include="..\ReadTrack.Repository\ReadTrack.Repository.csproj" />
+	</ItemGroup>
 
 </Project>
