@@ -1,4 +1,5 @@
-﻿using ReadTrack.Contracts;
+﻿using AutoMapper;
+using ReadTrack.Contracts;
 using ReadTrack.Service.Contracts;
 using ReadTrack.Shared.DataTransferObjects;
 
@@ -8,11 +9,13 @@ internal sealed class AuthorService : IAuthorService
 {
     private readonly IRepositoryManager _repository;
     private readonly ILoggerManager _logger;
+    private readonly IMapper _mapper;
 
-    public AuthorService(IRepositoryManager repository, ILoggerManager logger)
+    public AuthorService(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
     {
         _repository = repository;
         _logger = logger;
+        _mapper = mapper;
     }
 
     public IEnumerable<AuthorDto> GetAllAuthors(bool trackChanges)
@@ -20,14 +23,7 @@ internal sealed class AuthorService : IAuthorService
         try
         {
             var authors = _repository.Author.GetAllAuthors(trackChanges);
-
-            var authorsDto = authors.Select(a => new AuthorDto
-            {
-                Id = a.Id,
-                Name = a.Name ?? string.Empty,
-                MainGenre = a.MainGenre ?? string.Empty,
-                WritingStyle = a.WritingStyle ?? string.Empty
-            }).ToList();
+            var authorsDto = _mapper.Map<IEnumerable<AuthorDto>>(authors);
 
             return authorsDto;
         }
