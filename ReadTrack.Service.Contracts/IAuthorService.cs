@@ -1,8 +1,8 @@
-﻿using ReadTrack.Entities.Models;
+﻿using ReadTrack.Shared.DataTransferObjects;
 
 namespace ReadTrack.Service.Contracts;
 
 public interface IAuthorService
 {
-    IEnumerable<Author> GetAllAuthors(bool trackChanges);
+    IEnumerable<AuthorDto> GetAllAuthors(bool trackChanges);
 }

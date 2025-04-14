@@ -1,6 +1,8 @@
 ﻿using ReadTrack.Contracts;
-using ReadTrack.Entities.Models;
 using ReadTrack.Service.Contracts;
+using ReadTrack.Shared.DataTransferObjects;
+
+namespace ReadTrack.Service;
 
 internal sealed class AuthorService : IAuthorService
 {
@@ -13,16 +15,25 @@ internal sealed class AuthorService : IAuthorService
         _logger = logger;
     }
 
-    public IEnumerable<Author> GetAllAuthors(bool trackChanges)
+    public IEnumerable<AuthorDto> GetAllAuthors(bool trackChanges)
     {
         try
         {
             var authors = _repository.Author.GetAllAuthors(trackChanges);
-            return authors;
+
+            var authorsDto = authors.Select(a => new AuthorDto
+            {
+                Id = a.Id,
+                Name = a.Name ?? string.Empty,
+                MainGenre = a.MainGenre ?? string.Empty,
+                WritingStyle = a.WritingStyle ?? string.Empty
+            }).ToList();
+
+            return authorsDto;
         }
         catch (Exception ex)
         {
-            _logger.LogError($"Erro em {nameof(GetAllAuthors)}: {ex}");
+            _logger.LogError($"Erro na execução de {nameof(GetAllAuthors)}: {ex}");
             throw;
         }
     }

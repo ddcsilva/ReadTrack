@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadTrack.Service", "ReadTr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadTrack.Presentation", "ReadTrack.Presentation\ReadTrack.Presentation.csproj", "{010A1097-AD94-4935-931F-E6E251239338}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadTrack.Shared", "ReadTrack.Shared\ReadTrack.Shared.csproj", "{D605D7D5-8F3F-48FA-AB08-13B360CB3872}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{010A1097-AD94-4935-931F-E6E251239338}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{010A1097-AD94-4935-931F-E6E251239338}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{010A1097-AD94-4935-931F-E6E251239338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D605D7D5-8F3F-48FA-AB08-13B360CB3872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D605D7D5-8F3F-48FA-AB08-13B360CB3872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D605D7D5-8F3F-48FA-AB08-13B360CB3872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D605D7D5-8F3F-48FA-AB08-13B360CB3872}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
