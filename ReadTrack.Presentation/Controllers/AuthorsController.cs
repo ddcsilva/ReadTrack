@@ -24,4 +24,11 @@ public class AuthorsController : ControllerBase
             return StatusCode(500, "Erro interno no servidor.");
         }
     }
+
+    [HttpGet("test-exception")]
+    public IActionResult TestException()
+    {
+        throw new Exception("Erro proposital pra testar o middleware global.");
+    }
+
 }
