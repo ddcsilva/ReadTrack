@@ -1,6 +1,7 @@
 using NLog;
 using Microsoft.AspNetCore.HttpOverrides;
 using ReadTrack.Api.Extensions;
+using ReadTrack.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,9 @@ builder.Services.AddControllers()
     .AddApplicationPart(typeof(ReadTrack.Presentation.AssemblyReference).Assembly);
 
 var app = builder.Build();
+
+var logger = app.Services.GetRequiredService<ILoggerManager>();
+app.ConfigureExceptionHandler(logger);
 
 if (app.Environment.IsDevelopment())
 {
